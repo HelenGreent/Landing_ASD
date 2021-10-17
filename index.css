@@ -1,0 +1,230 @@
+
+/* Style for header */
+.header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background-color: #27273A;
+    border-bottom: 1px solid #3E3F51;; 
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0px 10px;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #27273A;
+}
+
+.header_body {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+.header_logo {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+}
+
+.header_logo img {
+    max-width: 100%;
+    width: 73px;
+    height: 31px;
+}
+
+.header_logo p {
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 9px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #BCBEC0;
+    margin-left: 10px;
+}
+
+.header_burger {
+    display: none;
+}
+/* .header_menu {} */
+
+.header_list {
+    display: flex;
+    position: relative;
+    z-index: 2;
+}
+
+.header_list li {
+    list-style: none;
+    margin: 0px 0px 0px 60px;
+}
+
+.header_link {
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.active {
+    color: #ED2985;
+
+}
+.header_link:hover {
+    color: #ED2985;
+    transition: all 300ms ease-in-out;
+}
+ 
+@media (max-width:767px){
+    .header_body {
+        height: 75px;
+    }
+    .header_logo {
+        flex: 0 0 40px;
+    }
+    .header_burger {
+        display: block;
+        position: relative;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        z-index: 3;
+    }
+    .header_burger span {
+        position: absolute;
+        background-color:#ED2985;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        top: 9px;
+    }
+    .header_burger:before,
+    .header_burger:after {
+        content: '';
+        background-color:#ED2985;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        left: 0;
+    }
+    .header_burger:before{
+        top: 0;
+    }
+    .header_burger:after{
+        bottom: 0;
+    }
+    .header_menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+/* fix this without important */
+@media (max-width: 1097px) {
+.header_list li {
+    margin-left: 13px !important;
+}
+}
+
+/* Style for main content, first section */
+.first_section {
+    background-color: #27273A;
+}
+
+.first_wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 919px;
+    padding-top: 80px;
+}
+
+.first_wrapper h1 {
+    margin-top: 160px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 85px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.first_wrapper h1 i {
+    font-style: italic;
+}
+
+.flex_container_s1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+    position: relative;
+}
+.first_wrapper .flex_container_s1 p{
+    margin-left: 140px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 29px;
+    color: #BCBEC0;
+}
+
+.first_wrapper .flex_container_s1 button{
+    margin-left: 140px;
+    height: 55px;
+    width: 257px;
+    border: none;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    background: #ED2985;
+    color: #FFFFFF;
+    position: relative;
+    z-index: 2;
+}
+
+.first_wrapper .flex_container_s1 .circle{
+    border: 1px solid #FFFFFF;
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    opacity: 0.2; 
+    position: absolute;
+    right: -55px;
+    top: -70px;
+}
