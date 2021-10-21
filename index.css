@@ -513,3 +513,118 @@ section.third_section div .flex_text_s3 {
         margin: 40px 20px 0px 20px;
     }
 }
+
+/* Style for main content, fourth section */
+.fourth_section {
+    background-color: #FFFFFF;
+}
+.fourth_wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 525px;
+    padding-top: 80px;
+}
+.fourth_wrapper h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 85px;
+    color: #242539;
+    padding-top: 80px;
+}
+.grid_company_s4 {
+   padding-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+body > main > article > section.fourth_srction > div > div > img:nth-child(4) {
+    background-image: url(images/black_bg_s4_company.png);
+}
+
+@media (max-width: 1197px) {
+    .fourth_wrapper h2{
+        font-size: 40px;
+        line-height: 49px;
+        padding: 0px 20px 0px 20px;
+    }
+    .grid_company_s4 {
+        padding: 60px 20px 10px 20px;
+    }
+    .grid_company_s4 img {
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+/* Style for main content, five section */
+.five_section {
+    background: #F3F3F5;
+}
+.five_wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 1000px;
+    padding-top: 80px;
+}
+
+.five_wrapper h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 70px;
+    line-height: 85px;
+    color: #242539;
+}
+.photo_name .name {
+    font-family:'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 26px;
+    padding-top: 25px;
+}
+.photo_name .profession{
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #676774;
+}
+.flex_foto_comment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 175px;
+    padding-right: 176px;
+}
+.flex_foto_comment .comment {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 44px;
+    color: #242539;
+ }
+
+@media (max-width: 1197px) {
+    .five_section h2 {
+        font-size: 40px;
+        line-height: 49px;
+    }
+    .flex_foto_comment {
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 40px;
+    }
+    .flex_foto_comment .comment {
+        font-size: 20px;
+        line-height: 37px;
+    }
+    .flex_foto_comment .comment br {
+        display: none;
+    }
+}
