@@ -566,7 +566,7 @@ body > main > article > section.fourth_srction > div > div > img:nth-child(4) {
 .five_wrapper {
     max-width: 1180px;
     margin: 0 auto;
-    height: 1000px;
+    height: 800px;
     padding-top: 80px;
 }
 
@@ -609,16 +609,63 @@ body > main > article > section.fourth_srction > div > div > img:nth-child(4) {
     line-height: 44px;
     color: #242539;
  }
+.inline_btn_arrow_section {
+    display:flex;
+    flex-direction: row;
+    padding: 160px 0px 0px 200px;
+}
+.inline_btn {
+    display: flex;
+    flex-direction: row;
+}
+ .btn_left,
+ .btn_right {
+    border: 1px solid #DADADA;
+    width: 69px;
+    height: 69px;
+    border-radius: 50%;
+}
+.btn_left {
+    margin-right: 15px;
+    margin-left: 10px;
+}
+.btn_left img {
+    padding: 28px 0px 0px 21px;
+}
+.btn_right img {
+    padding: 28px 0px 0px 21px;
+}
+.inline_line {
+    display:flex;
+    flex-direction: row;
+    margin-left: 70px;
+    padding-top: 28px;
+}
+.inline_line li {
+    margin-left: 13px;
+}
+
+.inline_line .line {
+    width: 29px;
+    border-bottom: 3px solid #DADADA;;
+    height: 3px;
+    
+}
+.inline_line .active {
+    border-color: #ed2985;
+}
+ 
 
 @media (max-width: 1197px) {
     .five_section h2 {
         font-size: 40px;
         line-height: 49px;
+        padding: 0px 20px 0px 20px;
     }
     .flex_foto_comment {
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 40px;
+        padding: 40px 20px 0px 20px;
     }
     .flex_foto_comment .comment {
         font-size: 20px;
@@ -626,5 +673,26 @@ body > main > article > section.fourth_srction > div > div > img:nth-child(4) {
     }
     .flex_foto_comment .comment br {
         display: none;
+    }
+    .inline_btn_arrow_section {
+        padding: 40px 20px 0px 20px;
+    }
+    .photo_name {
+        display: flex;
+        flex-direction: row;
+        padding-top: 20px;
+        padding-left: 0px;
+    }
+    .name_profession {
+        padding-left: 20px;
+    }
+    .inline_btn_arrow_section {
+        display: flex;
+        flex-direction: column;
+        padding-top: 70px;
+    }
+    .inline_line {
+        padding-top: 70px;
+        margin-left: 0;
     }
 }
