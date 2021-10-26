@@ -1,0 +1,5 @@
+1. пусте поле зліва на респонсив (швидше всього через бургер шось не то )
+2.сховати коло секція 1 на респонсив
+3. hover last wrapper do it hover all
+4. position absolute in social footer
+5. hr to all with, not wrappper width
