@@ -201,6 +201,7 @@
     font-size: 16px;
     line-height: 29px;
     color: #BCBEC0;
+    padding: 0px 20px 0px 20px;
 }
 
 .flex_container_s1 button {
@@ -255,7 +256,8 @@
         position: relative;
     }
 
-    main article section.first_section div.first_wrapper div.flex_container_s1 p, main article section.first_section div.first_wrapper div.flex_container_s1 button {
+    main article section.first_section div.first_wrapper div.flex_container_s1 p,
+    main article section.first_section div.first_wrapper div.flex_container_s1 button {
         margin-left: 0;
         text-align: center;
     }
@@ -361,6 +363,9 @@
     .second_wrapper h2 span:last-of-type {
         display: block;
     }
+    .flex_container_s2 button {
+        margin-left:100px;
+    }
 }
 
 @media (max-width: 767px) {
@@ -370,7 +375,6 @@
         align-items: center;
         flex-direction: column-reverse;
     }
-
     .second_wrapper {
         min-height: 1450px;
     }
@@ -407,14 +411,13 @@
     max-width: 1180px;
     margin: 0 auto;
     min-height: 785px;
-    padding-top: 80px;
+    padding-top: 160px;
 }
 
 .flex_container_inline {
     display: flex;
     flex-direction: row;
     align-items: start;
-    margin-top: 83px;
 }
 
 .flex_container_inline div.line {
@@ -483,10 +486,7 @@ section.third_section div .flex_text_s3 {
 
     .third_wrapper {
         min-height: 1100px;
-    }
-
-    .flex_container_inline {
-        margin-top: -30px;
+        padding-top: 100px;
     }
 
     .flex_container_inline div.line {
@@ -925,7 +925,7 @@ body > main > article > section.fourth_srction > div > div > img:nth-child(4) {
 .eigth_wrapper {
     max-width: 1180px;
     margin: 0 auto;
-    min-height: 1050px;
+    min-height: 900px;
     padding-top: 160px;
 }
 
@@ -938,12 +938,131 @@ body > main > article > section.fourth_srction > div > div > img:nth-child(4) {
     color: #242539;
 }
 
-/* do it here */
+.flex_container_services {
+    position: relative;
+    padding-top: 120px;
+}
+
+.position_absolute {
+    position: absolute;
+    left: 450px;
+    top: -145px;
+}
+.position_absolute p {
+    position: absolute;
+    left: 320px;
+    top: 380px;
+    width: 100%;
+    background-color: #FFFFFF;
+    padding: 60px 0px 60px 50px;
+}
+
+.flex_container_services div {
+    padding-top: 30px;
+}
+
+.flex_container_services h3 { 
+    width: 250px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26px;
+    text-transform: uppercase;
+    color: #242539;
+    cursor: pointer;
+}
+
+.flex_container_services h3:hover {
+    box-shadow: 0 2px 0 #ed2985;
+    transition: all 300ms ease-in-out;
+}
+
+.flex_container_services .top_btn,
+.flex_container_services .bottom_btn {
+    display: none;
+}
+
+.flex_container_services p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 29px;
+    color: #242539;
+}
+
+.flex_container_services .coder {
+    height: 760px;
+}
+
+.flex_container_services button {
+    margin-top: 140px;
+    height: 55px;
+    width: 257px;
+    border: 1px solid #242539;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    text-align: center;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    text-transform: capitalize;
+    background: #FFFFFF;
+    color: #242539;
+}
+
 @media (max-width: 1197px) {
     .eigth_section h2 {
         font-size: 40px;
         line-height: 49px;
+        padding-left: 20px;
     }
+    .eigth_wrapper {
+        padding-top: 100px;
+    }
+    .flex_container_services {
+        padding: 50px 0px 0px 20px;
+    }
+    .flex_container_services .inline h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .flex_container_services .inline img {
+        padding-right: 20px;
+    }
+    .flex_container_services button {
+        margin: 50px 0px 100px 0px; 
+    }
+    .flex_container_services .top_btn,
+    .flex_container_services .bottom_btn {
+        display: inline;
+    }
+    .inline {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .position_absolute {
+        position: static;
+    }
+    .position_absolute p {
+        position: static;
+        margin-bottom: 30px;
+    }
+    .position_absolute .coder {
+        height: 280px;
+    }
+    .position_absolute p {
+        font-size: 16px;
+        line-height: 27px;
+        padding: 0;
+    }
+    .position_absolute p br {
+        display: none;
+    }
+
 }
 
 /* Style for footer - form */
@@ -1162,7 +1281,6 @@ footer > div > div > div.form_text > p > span {
     border-radius: 50%;
     margin-right: 20px;
 }
-
 .footer_social .btn:nth-child(1) img {
     padding: 22px 0px 0px 28px;
 }
@@ -1348,9 +1466,8 @@ footer > div > div > div.form_text > p > span {
     .footer_slider .button:nth-child(1) {
         padding-right: 15px;
     }
-
-    .footer_slider .button:nth-child(2) {
-        padding-left: 15px;
+    .footer_slider div:nth-child(4) {
+        padding-right: 20px;
     }
 
     .copyright p {
